@@ -16,7 +16,7 @@ public class C02_DriversMethodlari {
         SetProperty()
  kullanilir.
 
-          methoda 2 oarametre ekleyeceğiz
+          methoda 2 parametre ekleyeceğiz
           1. parametre herkes icin aynı  :webdriver.chrome.driver
           2. parametre bu driver'in dosya yolu herkesin bilgisayarında farklı olabilir
           windows bilgisayarda sonunda .exe yazılmalıdır.

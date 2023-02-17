@@ -27,6 +27,17 @@ public class C03_DriverMethodlari {
 
         // amazon anasayfaya gittiginizi test edin
 
+        // Test expected result ile actual result'in karşilastirilmasidir.
+        //ornegin url amazon iceriyorsa diyebiliriz.
+
+        String expectedIcerik="amazon";
+        String actualUrl=driver.getCurrentUrl();
+
+      if (actualUrl.contains(expectedIcerik)){// amazon sayfasina gittiysek
+          System.out.println("Test PASSED");
+      }else {
+          System.out.println("Test FAILED");
+      }
 
 
 
