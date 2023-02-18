@@ -24,7 +24,7 @@ public class C01_Xpath {
         if (deleteButonElementi.isDisplayed()){
             System.out.println("delete butonu PASSED");
         }else{
-            System.out.println("delete buttonu Faıled");
+            System.out.println("delete buttonu FAILED");
         }
      //   4- Delete tusuna basin
         deleteButonElementi.click();
