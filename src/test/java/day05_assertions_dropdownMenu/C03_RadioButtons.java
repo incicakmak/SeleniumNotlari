@@ -43,10 +43,10 @@ public class C03_RadioButtons {
         WebElement femaleElementi= driver.findElement(By.xpath("(//input[@type='radio'])[1]"));
         WebElement maleElementi= driver.findElement(By.xpath("(//input[@type='radio'])[2]"));
         WebElement customElementi= driver.findElement(By.xpath("(//input[@type='radio'])[3]"));
-        maleElementi.click();
+        femaleElementi.click();
         //  e. Sectiginiz radio button'un secili, otekilerin ise secili olmadigini test edin
-        Assert.assertTrue(maleElementi.isSelected());
-        Assert.assertFalse(femaleElementi.isSelected());
+        Assert.assertTrue(femaleElementi.isSelected());
+        Assert.assertFalse(maleElementi.isSelected());
         Assert.assertFalse(customElementi.isSelected());
     }
 

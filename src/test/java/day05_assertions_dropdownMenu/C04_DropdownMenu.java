@@ -51,12 +51,15 @@ public class C04_DropdownMenu {
         WebElement ddm = driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
         Select select = new Select(ddm);
         select.selectByVisibleText("Books");
+
         //  2. Arama kutusuna Java yazin ve aratin
         WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Java" + Keys.ENTER);
+
         //  3. Bulunan sonuc sayisini yazdirin
         WebElement sonucYaziElementi = driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"));
         System.out.println(sonucYaziElementi.getText());
+
         //  4. Sonucun Java kelimesini icerdigini test edin
         String expectedIcerik= "Java";
         String actualSonucYazisi= sonucYaziElementi.getText();
