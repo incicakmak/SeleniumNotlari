@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class C02_ReadExcel {
@@ -59,6 +60,12 @@ public class C02_ReadExcel {
             ulkelerMap.put(key,value);
         }
         System.out.println(ulkelerMap);
+
+        Set<Map.Entry<String,String>> ulkelerEntrySet= ulkelerMap.entrySet();
+        for (Map.Entry<String,String> eachEntry: ulkelerEntrySet
+        ) {
+            System.out.println(eachEntry);
+        }
     }
 
 
